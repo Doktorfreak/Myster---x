@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
-app.get("/", (req, res) => {
+app.use(express.static("public"));
   res.json({
     name: "Myster X",
     status: "online",
