@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myster X</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111827;
+      color: white;
+      text-align: center;
+    }
+
+    .game {
+      max-width: 500px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .card {
+      background: #1f2937;
+      border-radius: 20px;
+      padding: 25px;
+      margin-top: 25px;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      margin-top: 12px;
+      border: 0;
+      border-radius: 12px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="game">
+    <h1>🕵️ Myster X</h1>
+    <p>Willkommen bei Myster X!</p>
+
+    <div class="card">
+      <h2>Dein Abenteuer beginnt</h2>
+      <p id="text">Finde heraus, was hinter dem mysteriösen Fall steckt.</p>
+
+      <button onclick="startGame()">🔎 Untersuchung starten</button>
+      <button onclick="investigate()">🕵️ Umgebung untersuchen</button>
+    </div>
+  </div>
+
+  <script>
+    function startGame() {
+      document.getElementById("text").textContent =
+        "Du betrittst den ersten Tatort. Etwas stimmt hier nicht...";
+    }
+
+    function investigate() {
+      document.getElementById("text").textContent =
+        "Du findest eine mysteriöse Spur. Die Jagd beginnt!";
+    }
+  </script>
+</body>
+</html>
